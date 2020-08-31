@@ -1,11 +1,11 @@
-import {MigrationInterface, QueryRunner, Table, TableForeignKey} from "typeorm";
+import {MigrationInterface, QueryRunner, Table} from "typeorm";
 
-export default class CreateAppointments1598573789299 implements MigrationInterface {
+export default class CreateUsers1598806665895 implements MigrationInterface {
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         await queryRunner.createTable(
             new Table({
-                name: 'appointments',
+                name: 'users',
                 columns: [
                     {
                         name: 'id',
@@ -15,14 +15,20 @@ export default class CreateAppointments1598573789299 implements MigrationInterfa
                         default: 'uuid_generate_v4()'
                     },
                     {
-                        name: 'provider_id',
-                        type: 'uuid',
-                        isNullable: true
+                        name: 'name',
+                        type: 'varchar',
+                        isNullable: false
                     },
                     {
-                        name: 'date',
-                        type: 'timestamp with time zone', // exclusivo PostGres
-                        isNullable: false
+                        name: 'email',
+                        type: 'varchar',
+                        isNullable: false,
+                        isUnique: true
+                    },
+                    {
+                        name: 'password',
+                        type: 'varchar',
+                        isNullable: false,
                     },
                     {
                         name: 'created_at',
@@ -37,11 +43,11 @@ export default class CreateAppointments1598573789299 implements MigrationInterfa
                 ]
             })
         )
-
+        
     }
 
     public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.dropTable('appointments');
+        await queryRunner.dropTable('users');
     }
 
 }
