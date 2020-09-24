@@ -6,7 +6,7 @@ import ensureAuthenticated from '../middlewares/ensureAuthenticated';
 import CreateUserService from '../services/CreateUserService';
 import UpdateUserAvatarService from '../services/UpdateUserAvatarService';
 
-import uploadConfig from '../config/upload';
+import uploadConfig from '../../config/upload';
 const upload = multer(uploadConfig);
 
 const usersRouter = Router();
