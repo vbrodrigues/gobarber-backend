@@ -1,5 +1,5 @@
 Arguments: 
-  D:\dev\nodejs\node.exe C:\dev\Yarn\bin\yarn.js add aws-sdk
+  D:\dev\nodejs\node.exe C:\dev\Yarn\bin\yarn.js add @types/aws-sdk -D
 
 PATH: 
   C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1\libnvvp;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\User\Anaconda3;C:\Users\User\Anaconda3\Scripts;C:\Program Files\NVIDIA Corporation\Nsight Compute 2019.3.0\;D:\dev\nodejs\;C:\dev\Yarn\bin\;D:\dev\mongodb-win32-x86_64-2012plus-4.2.8\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\Java\jdk1.8.0_211\bin;D:\Android\Sdk\emulator;D:\Android\Sdk\tools;D:\Android\Sdk\tools\bin;D:\Android\Sdk\platform-tools;D:\Program Files\Git\cmd;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\User\Anaconda3\lib\site-packages;C:\Users\User\Anaconda3\Library\bin;D:\ffmpeg\ffmpeg-20200831-4a11a6f-win64-static\bin;D:\Program Files\sox-14-4-2;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;D:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Users\User\AppData\Local\Microsoft\WindowsApps;C:\Users\User\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\User\AppData\Roaming\npm;C:\Users\User\AppData\Local\Yarn\bin;D:\heroku\bin
@@ -14,7 +14,7 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: 4488:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:677:
+  Error: 1428:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:c:\ws\deps\openssl\openssl\ssl\record\ssl3_record.c:677:
 
 npm manifest: 
   {
